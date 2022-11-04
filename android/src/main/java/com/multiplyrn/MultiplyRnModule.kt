@@ -18,6 +18,11 @@ class MultiplyRnModule(reactContext: ReactApplicationContext) :
     promise.resolve(a * b)
   }
 
+  @ReactMethod
+  fun sum(a: Double, b: Double, promise: Promise) {
+    promise.resolve(a + b)
+  }
+
   companion object {
     const val NAME = "MultiplyRn"
   }

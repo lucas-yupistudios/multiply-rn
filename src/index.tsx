@@ -20,3 +20,7 @@ const MultiplyRn = NativeModules.MultiplyRn
 export function multiply(a: number, b: number): Promise<number> {
   return MultiplyRn.multiply(a, b);
 }
+
+export function sum(a: number, b: number): Promise<number> {
+  return MultiplyRn.sum(a, b);
+}
